@@ -4,7 +4,7 @@ describe 'posts' do
 
   context 'when no posts have been added' do
 
-      it 'should display a prompt to add a post' do
+    it 'should display a prompt to add a post' do
       visit '/posts'
       expect(page).to have_content 'No posts yet!'
       expect(page).to have_link 'Add a post!'
@@ -14,7 +14,7 @@ describe 'posts' do
   context 'posts have been added' do
 
     before do
-      Post.create(name: 'Little Cat')
+      Post.create(name:'Little Cat')
     end
 
     it 'should display posts' do
@@ -24,15 +24,30 @@ describe 'posts' do
     end
   end
 
-  describe 'creating posts' do
+  context 'creating posts' do
+
     it 'prompts user to fill out a form, then displays the new post' do
-    visit '/posts'
-    click_link 'Add a post'
-    fill_in 'Name', with: 'Little Cat'
-    click_button 'Create Post'
-    expect(page).to have_content 'Little Cat'
-    expect(current_path).to eq '/posts'
-   end
+      visit '/posts'
+      click_link 'Add a post'
+      fill_in 'Name', with: 'Little Cat'
+      click_button 'Create Post'
+      expect(page).to have_content 'Little Cat'
+      expect(current_path).to eq '/posts'
+    end
+  end
+
+  context 'viewing posts' do
+
+    before do
+      @pint = Post.create(name:'Pint')
+    end
+
+    it 'lets a user view a post' do
+      visit '/posts'
+      click_link 'Pint'
+      expect(page).to have_content 'Pint'
+      expect(current_path).to eq "/posts/#{@pint.id}"
+    end
   end
 
 end
