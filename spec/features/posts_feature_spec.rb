@@ -50,4 +50,18 @@ describe 'posts' do
     end
   end
 
+  context 'deleting posts' do
+
+    before do
+      Post.create(name: "Pint")
+    end
+
+    it "removes a post when a user clicks a delete link" do
+      visit '/posts'
+      click_link 'Delete Pint'
+      expect(page).not_to have_content 'Pint'
+      expect(page).to have_content 'Post deleted successfully'
+    end
+  end
+
 end
