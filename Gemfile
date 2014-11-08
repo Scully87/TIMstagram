@@ -34,6 +34,8 @@ gem 'paperclip'
 
 gem 'devise'
 
+gem 'rspec-collection_matchers'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

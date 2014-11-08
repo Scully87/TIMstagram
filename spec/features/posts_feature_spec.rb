@@ -58,7 +58,7 @@ describe 'posts' do
 
     it "removes a post when a user clicks a delete link" do
       visit '/posts'
-      click_link 'Delete Pint'
+      click_link 'Delete'
       expect(page).not_to have_content 'Pint'
       expect(page).to have_content 'Post deleted successfully'
     end
