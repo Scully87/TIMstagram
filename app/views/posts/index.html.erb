@@ -4,10 +4,10 @@
   <% @posts.reverse.each do |post| %>
     <%= link_to "#{post.name}", post_path(post) %>
     <%= link_to "Delete", post_path(post), method: :delete %>
+    <%= image_tag post.image.url(:thumb) %>
       <h2> <%= post.name %> </h2>
+
   <% end %>
-
-
 <% else %>
   No posts yet!
 <% end %>
