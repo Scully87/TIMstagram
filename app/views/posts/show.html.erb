@@ -6,10 +6,10 @@
 <% if @post.comments.any? %><br>
   <h3> Comments! </h3>
   <% @post.comments.each do |comment| %>
-<section class="comments">
+
     <%= comment.comments %><br>
   <% end %>
-</section>
+
 
 <% else %>
    <h3>No comments yet</h3>
