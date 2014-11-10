@@ -2,17 +2,20 @@
 <html>
 <head>
   <title>Instagram</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-<a href='/'>Home</a>
+<a href='/'>Home</a> ||
 <% if user_signed_in? %>
-  <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+  <%= link_to "Sign out", destroy_user_session_path, method: :delete %> ||
 <% else %>
-  <%= link_to "Sign in", new_user_session_path %>
-  <%= link_to "Sign up", new_user_registration_path %>
+  <%= link_to "Sign in", new_user_session_path %> ||
+  <%= link_to "Sign up", new_user_registration_path %> ||
   <%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %>
 <% end %>
 

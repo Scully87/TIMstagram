@@ -43,6 +43,8 @@ gem 'poltergeist', group: :test
 gem 'database_cleaner', group: :test
 
 gem 'paperclip'
+
+gem 'launchy'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

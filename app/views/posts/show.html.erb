@@ -1,2 +1,19 @@
 <%= image_tag @post.image.url(:medium) %>
 <p><%= @post.name %></p>
+
+
+ <%= link_to "Comments", new_post_comment_path(post)%><br>
+<h3>Comments</h3>
+
+<% if @post.comments.any? %>
+  <ul>
+    <% post.comments.each do |comment| %>
+      <li>
+        <%= comment.comments %>
+      </li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>No comments.</p>
+<% end %>
+
