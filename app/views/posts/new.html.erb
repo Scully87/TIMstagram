@@ -10,8 +10,8 @@
 <% end %>
 
 <%= form_for @post,html: {multipart: true} do |f| %>
-  <%= f.file_field :image %>
+  <%= f.file_field :image, class: 'image-field' %><br>
   <%= f.label :name %><br>
   <%= f.text_field :name %><br><br>
-  <%= f.submit %>
+  <%= f.submit %><br><br>
 <% end %>

@@ -59,6 +59,7 @@ body {
     }
 
     nav{
+
       width: 95%;
        font-size: 2.3em;
     }
@@ -77,6 +78,17 @@ body {
       /*border: solid 1px #CCCCCC;*/
     }
 
+    .image-field {
+      position: center;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 20%;
+    }
+
+    .create-post {
+      color: black;
+    }
+
     .likes-link {
       font-size: 1.5em;
     }
@@ -87,14 +99,16 @@ body {
       max-width: 301px;
       max-height: 325px;
       font-size: 0.8em;
-      /*margin-bottom: 1px;*/
+      margin-bottom: 10px;
+      padding-bottom: 10px;
     }
 
     footer {
+      position: relative;
       clear: both;
       width: 95%;
       height: 60px;
-      border: solid 3px #CCCCCC;
+      /*border: solid 3px #CCCCCC;*/
       border-radius: 10px;
       text-align: center;
       font-size: 12px;
@@ -106,6 +120,16 @@ body {
         border-radius: 15px;
         font-size: 1.5em;
         text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .notice {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .alert {
         margin-left: auto;
         margin-right: auto;
       }
