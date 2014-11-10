@@ -16,7 +16,6 @@
 /*body {
   text-align: center;
 }*/
-
 @import url(http://fonts.googleapis.com/css?family=Alfa+Slab+One);
 
 body {
@@ -24,31 +23,71 @@ body {
   font-family: 'Alfa Slab One', cursive;
   background: #333;
   color: #e7e2df;
-  width: 100%;
+  width: 440px;
+  height: 100%;
   /*overflow: hidden;*/
 }
 
-section.posts{
-  border-style: solid;
-  border-width: medium;
-  border-color: white;
-  border-radius: 20px;
-  margin-right: 20px;
-  margin-left: 20px;
-  margin-bottom: 20px;
-}
+#wrapper {
+  position: relative;
+  width: 425px;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  }
 
-section#posts{
-  border-style: solid;
-  border-width: medium;
-  border-color: white;
-  border-radius: 20px;
-  margin-right: 400px;
-  margin-left: 400px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  #holder {
+    width: 425px;
+    height: 1300px;
+    border: solid 1px #CCCCCC;
+    border-radius: 10px;
+    margin-top: 4px;
+    }
 
-}
+  header {
+    width: auto;
+    /*height: 100px;*/
+    /*height: 120px;*/
+    /*border: solid 1px #CCCCCC;*/
+    }
+
+    h1 {
+    font-size: 2.2em;
+    margin: 10px 0 0 0;
+    padding: 0px 0px 0px 0px;
+    }
+
+    section {
+      float: left;
+      /*width: 100px;*/
+      height: auto;
+      margin-left: 2px;
+      margin-bottom: 2px;
+      padding-left: 2px;
+      /*border: solid 1px #CCCCCC;*/
+    }
+
+    section#posts {
+      border: solid 1px #CCCCCC;
+      max-width: 101px;
+      max-height: 150px;
+      font-size: 0.8em;
+      /*margin-bottom: 1px;*/
+    }
+
+    footer {
+      clear: both;
+      width: 425px;
+      height: 60px;
+      border: solid 1px #CCCCCC;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 12px;
+      padding-top: 20px;
+      }
+
+
+
 .instagram {
   margin: 50px auto;
   width: 200px;
@@ -240,76 +279,4 @@ section#posts{
   background: radial-gradient(ellipse at center, #ffffff 0%, rgba(57, 39, 59, 0.77) 8%, rgba(32, 12, 35, 0.8) 9%, rgba(58, 42, 72, 0.97) 14%, rgba(59, 45, 74, 0.96) 15%, rgba(63, 70, 87, 0.92) 22%, rgba(68, 101, 104, 0.87) 31%, rgba(64, 79, 92, 0.79) 37%, rgba(60, 53, 78, 0.89) 44%, rgba(58, 42, 72, 0.93) 47%, rgba(0, 0, 0, 0.86) 50%, rgba(74, 109, 112, 0.81) 52%, rgba(73, 107, 110, 0.79) 53%, rgba(67, 98, 101, 0.81) 57%, #060309 100%), #000000;
   /* W3C */
 
-}
-.flash {
-  width: 1000%;
-  height: 1000%;
-  top: -1000px;
-  bottom: 0;
-  position: absolute;
-  left: -1000px;
-  right: 0;
-  z-index: 300;
-  background: rgba(255, 255, 255, 0);
-}
-body:hover .flash {
-  -webkit-animation: big 0.2s ease-out 1s 3;
-  -moz-animation: big 0.2s ease-out 1s 3;
-  -o-animation: big 0.2s ease-out 1s 3;
-  animation: big 0.2s ease-out 1s 3;
-}
-@-webkit-keyframes big {
-  0% {
-    background: #ffffff;
-  }
-  5% {
-    opacity: rgba(255, 255, 255, 0);
-  }
-  100% {
-    opacity: rgba(255, 255, 255, 0);
-  }
-}
-@-moz-keyframes big {
-  0% {
-    background: #ffffff;
-  }
-  5% {
-    opacity: rgba(255, 255, 255, 0);
-  }
-  100% {
-    opacity: rgba(255, 255, 255, 0);
-  }
-}
-@-ms-keyframes big {
-  0% {
-    background: #ffffff;
-  }
-  5% {
-    opacity: rgba(255, 255, 255, 0);
-  }
-  100% {
-    opacity: rgba(255, 255, 255, 0);
-  }
-}
-@-o-keyframes big {
-  0% {
-    background: #ffffff;
-  }
-  5% {
-    opacity: rgba(255, 255, 255, 0);
-  }
-  100% {
-    opacity: rgba(255, 255, 255, 0);
-  }
-}
-@keyframes big {
-  0% {
-    background: #ffffff;
-  }
-  5% {
-    opacity: rgba(255, 255, 255, 0);
-  }
-  100% {
-    opacity: rgba(255, 255, 255, 0);
-  }
 }
