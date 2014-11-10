@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Instagram</title>
+  <title>TIMstagram</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
@@ -10,7 +10,9 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<a href='/'>Home</a> ||
+<h1>Welcome to &#8482;stagram</h1><br
+><br><a href='/'>Home</a> ||
+
 <% if user_signed_in? %>
   <%= link_to "Sign out", destroy_user_session_path, method: :delete %> ||
 <% else %>
