@@ -1,13 +1,15 @@
 <%= image_tag @post.image.url(:medium) %>
 <p><h5><%= @post.name %></h5></p>
 
-<%= link_to "Comment", new_post_comment_path(@post) %>
+<%= link_to "Comment", new_post_comment_path(@post), class: 'comment-link' %>
 
 <% if @post.comments.any? %><br>
   <h3> Comments! </h3>
   <% @post.comments.each do |comment| %>
+<section class="comments">
     <%= comment.comments %><br>
   <% end %>
+</section>
 
 <% else %>
    <h3>No comments yet</h3>
