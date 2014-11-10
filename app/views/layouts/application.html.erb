@@ -4,12 +4,20 @@
   <title>TIMstagram</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class="instagram">
+  <div class="flash"></div>
+  <div class="up">
+    <div class="rainbow"></div>
+    <div class="eye"></div>
+  </div>
+  <div class="lent"></div>
+</div>
+
 <h1>Welcome to &#8482;stagram</h1><br
 ><br><a href='/'>Home</a> ||
 
@@ -24,6 +32,5 @@
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
 <%= yield %>
-
 </body>
 </html>
