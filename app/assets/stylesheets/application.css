@@ -71,7 +71,7 @@ body {
     section#posts {
       border: solid 1px #CCCCCC;
       max-width: 301px;
-      max-height: 300px;
+      max-height: 320px;
       font-size: 0.8em;
       /*margin-bottom: 1px;*/
     }
