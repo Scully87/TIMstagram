@@ -45,6 +45,8 @@ gem 'database_cleaner', group: :test
 gem 'launchy'
 
 gem 'rails_12factor', group: :production
+
+gem 'aws-sdk'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

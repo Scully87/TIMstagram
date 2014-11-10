@@ -4,6 +4,14 @@ Rails.application.configure do
 config.serve_static_assets = true
 config.assets.compile = true
 config.assets.digest = true
+config.paperclip_defaults = {
+  :storage => :s3,
+  :s3_credentials => {
+    :bucket => ENV['S3_BUCKET_NAME'],
+    :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
+    :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
+  }
+}
   config.action_mailer.default_url_options = { host: 'localhost:3000' }
   # Settings specified here will take precedence over those in config/application.rb.
 
