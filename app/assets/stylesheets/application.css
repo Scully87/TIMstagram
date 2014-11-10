@@ -21,6 +21,7 @@
 body {
   text-align: center;
   font-family: 'arial';
+  font-size: 2.3em;
   background: #333;
   color: #e7e2df;
   width: 100%;
@@ -52,7 +53,7 @@ body {
     }
 
     h1 {
-    font-size: 2.2em;
+    font-size: 4.2em;
     margin: 10px 0 0 0;
     padding: 0px 0px 0px 0px;
     }
@@ -94,7 +95,6 @@ body {
         margin-left: auto;
         margin-right: auto;
       }
-
 
 
 .instagram {
