@@ -23,21 +23,21 @@ body {
   font-family: 'Alfa Slab One', cursive;
   background: #333;
   color: #e7e2df;
-  width: 800px;
+  width: 440px;
   height: 100%;
   /*overflow: hidden;*/
 }
 
 #wrapper {
   position: relative;
-  width: 795px;
+  width: 425px;
   height: auto;
   margin-right: auto;
   margin-left: auto;
   }
 
   #holder {
-    width: 795px;
+    width: 425px;
     height: 1300px;
     border: solid 1px #CCCCCC;
     border-radius: 10px;
