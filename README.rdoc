@@ -1,7 +1,0 @@
-Re-creating Instagram using Ruby on Rails
-
-Breakdown of models:
-- User
-- Post
-- Comment/Description
-- Like
